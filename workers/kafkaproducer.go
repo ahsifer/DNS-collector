@@ -151,7 +151,7 @@ func (w *KafkaProducer) ConnectToKafka(ctx context.Context, readyTimer *time.Tim
 
 		var conn *kafka.Conn
 		var err error
-		
+
 		if partition == nil {
 			// Lookup partitions and create connections for each
 			var partitions []kafka.Partition
